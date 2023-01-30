@@ -6,10 +6,16 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<iframe id="twitch-chat-embed"
-        src="https://www.twitch.tv/embed/bichouu_/chat?parent=<parent>"
-        height="500"
-        width="350">
+<div id="twitch-embed"></div>
+    <script src="https://embed.twitch.tv/embed/v1.js"></script>
+    <script type="text/javascript">
+      new Twitch.Embed("twitch-embed", {
+        width: "100%",
+        height: 600,
+        channel: "bichouu_",
+        theme: "dark",
+      });
+    </script>
 </iframe>
 </body>
 </html>
